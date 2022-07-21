@@ -8,12 +8,15 @@ body{
    display: flex;
    justify-content: center;
    justify-content: space-around;
-   border: 2px solid black;
+   /* border: 2px solid black; */
+}
+.container .img {
+    padding: 0;
 }
 .container .form{
  width: 350px;
  height: 400px;
- border: 1px solid black;
+ border: 1px solid rgb(218, 215, 215);
  background: #ffffff;
  text-align: center;
 }
@@ -23,7 +26,7 @@ body{
     border-radius: 3px;
     width:65%;
     flex: 1 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     outline: none;
     overflow: hidden;
     padding: 10px 9px 10px 9px;
@@ -35,16 +38,151 @@ body{
     border-radius: 2px;
     width:65%;
     flex: 1 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     outline: none;
     overflow: hidden;
     padding: 10px 9px 10px 9px;
 
 }
 .container .form .submit button{
-    width:70%;
-    padding: 5px;
+   width:71%;
+   padding: 8px;
+   border: none;
+   background: #b2dffc;
+   color: white;
+   font-weight: bold;
+   border-radius: 3px;
+   margin-bottom: 30px;
+
 }
 .container .form .icon{
-    padding:  35px 0px 30px 0;
+    padding:  38px 0px 25px 0;
+}
+.container .form .icon img{
+    width: 180px;
+}
+.container .form input::placeholder{
+color: rgb(153, 153, 153);
+font-size: 12px ;
+font-weight: 90;
+
+}
+
+.hr{
+    padding-left: 50px;
+  
+    display: flex;
+    width:71%;
+     justify-content: center;
+}
+.hr .hr-right{
+    width:40%;
+    height: 1px;
+    background:#bbbaba;
+    margin-top:5px;
+}
+.hr .matn{
+    width: 20%;
+    font-size: 14px;
+    color:rgb(153, 153, 153);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.hr .hr-left{
+    width:40%;
+    height: 1px;
+    background:#bbbaba; 
+    margin-top:5px;
+}
+
+.fasbook{
+    display: flex;
+    justify-content:center;
+    padding-top: 15px;
+}
+.fasbook .fas-matn a{
+    margin-top: -14px;
+font-size: 14px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+color: #385185;
+cursor: pointer;
+}
+
+.fasbook .img-fas{
+padding-right: 8px;
+
+}
+.fasbook .img-fas img{
+    width: 20px;
+}
+.forgot{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 430;
+color: #273b68;
+}
+
+.sing{
+    border: 1px solid rgb(218, 215, 215);
+    width: 350px;
+    height: 60px;
+    background: #ffffff;
+ 
+}
+.sing .matn {
+    padding-top: 20px;
+
+}
+.sing .matn span {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #2b2a2a;
+    
+}
+.sing .matn .singg{
+font-size: 15px;
+color: #2582fa;
+font-weight: 450;
+}
+
+
+.get{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 860px) {
+  .container .img img{
+display: none;
+  }
+  .sing{
+    border: none;
+  }
+  .container .form{
+    border: none;
+  }
+  
+  .container form .user input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 860px) {
+.container .img {
+   padding-right:30px;
+}
+}
+@media screen and (max-width: 448px) {
+    .container  {
+        width: 100%;
+    }
+    .container .form {
+        background: #fafafa;
+    }
+    .container .form .icon img{
+        width: 200px;
+        background-image: url("./img/5.PNG");
+    }
+    .container .form input::placeholder{
+        font-size: 12px;
+    }
 }
